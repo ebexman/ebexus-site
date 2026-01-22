@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ebexus</title>
+
+  <!-- Futuristic fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <nav class="navbar container">
+      <!-- Logo + Site Name (left) -->
+      <div class="logo">
+        <img src="https://i.postimg.cc/nhcV1CBy/20260118_115202.png" alt="Ebexus Logo" class="logo-img">
+        <span class="site-name">Ebexus</span>
+      </div>
+
+      <!-- Hamburger button (right in mobile) -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Desktop nav links -->
+      <div class="nav-links desktop-nav">
+        <a href="#about">About $EBEX</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About $EBEX</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+            <a href="#faq">FAQ</a>
+    </div>
+  </header>
+
+  <main><!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <!-- Animated Tagline – glow pulse + fade-in -->
+    <h1 class="animated-tagline">Powering Community Growth</h1>
+
+    <p class="subtitle">Building a stronger community together.</p>
+
+    <a href="/ebexus-site/assets/pdf/Ebex-Whitepaper.pdf" target="_blank" class="cta-white">Read Whitepaper</a>
+  </div>
+</section>
+
+<!-- About $EBEX Section -->
+<section class="about container" id="about">
+  <h2>About $EBEX</h2>
+  <p class="about-desc">
+    $EBEX is a community-driven token created as an experimental initiative on the blockchain. It's goal is to build a stronger community together.
+    Our mission is to support a strong and collaborative community around the ebexus token, exploring innovative uses of blockchain technology and laying the foundation for future developments in the ecosystem.
+  </p>
+
+  <div class="about-points">
+    <div class="point-card">
+      <h3>Community-Driven Token</h3>
+      <p>$EBEX is a community-driven token, designed to encourage active participation and collaboration, allowing members to contribute to the project’s growth and direction.</p>
+    </div>
+
+    <div class="point-card">
+      <h3>Experimental Initiative</h3>
+      <p>It was launched as an experimental initiative on the blockchain, exploring innovative ways to use decentralized solutions.</p>
+    </div>
+
+    <div class="point-card">
+      <h3>Building Stronger Communities</h3>
+      <p>Its goal is to bring people together, fostering collaboration and engagement for a sustainable ecosystem.</p>
+    </div>
+  </div>
+
+  <!-- Small CTA sa dulo ng section -->
+  <a href="/whitepaper.pdf" target="_blank" class="cta-white">Read Whitepaper</a>
+</section>
+
+<!-- Tokenomics Section -->
+<section class="tokenomics container" id="tokenomics">
+  <h2>Tokenomics</h2>
+  <p class="tokenomics-desc">
+    $EBEX has a fixed total supply with clear, transparent allocations. No hidden minting, no team vesting unlocks — everything is designed for long-term community value and sustainability.
+  </p>
+
+  <!-- Key Stats (simple cards) -->
+  <div class="token-stats">
+    <div class="stat-card">
+      <div class="stat-value">25,000,000</div>
+      <div class="stat-label">Total Supply</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">Fixed</div>
+      <div class="stat-label">Minting</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">0%</div>
+      <div class="stat-label">Team Vesting</div>
+    </div>
+  </div>
+
+  <!-- Allocation Breakdown (visual bars) -->
+  <div class="allocation-breakdown">
+    <h3>Allocation Breakdown</h3>
+    <div class="allocation-grid">
+      <div class="allocation-item">
+        <div class="allocation-label">Community Engagemnet Allocation</div>
+        <div class="allocation-bar" style="width: 40%;">
+          <span>40%</span>
+        </div>
+      </div>
+      <div class="allocation-item">
+        <div class="allocation-label">Community Allocation / Early Access</div>
+        <div class="allocation-bar" style="width: 20%;">
+          <span>20%</span>
+        </div>
+      </div>
+      <div class="allocation-item">
+        <div class="allocation-label">Liquidity Pool Allocation</div>
+        <div class="allocation-bar" style="width: 20%;">
+          <span>20%</span>
+        </div>
+      </div>
+      <div class="allocation-item">
+        <div class="allocation-label">Founder Allocation</div>
+        <div class="allocation-bar" style="width: 10%;">
+          <span>10%</span>
+        </div>
+      </div>
+      <div class="allocation-item">
+        <div class="allocation-label">Marketing Allocation</div>
+        <div class="allocation-bar" style="width: 5%;">
+          <span>5%</span>
+        </div>
+      </div>
+      <div class="allocation-item">
+        <div class="allocation-label">Development Allocation</div>
+        <div class="allocation-bar" style="width: 5%;">
+          <span>5%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap Section -->
+<section class="roadmap container" id="roadmap">
+  <h2>Roadmap</h2>
+  <p class="roadmap-desc">
+    Our journey is community-led and transparent. Below is the phased plan for $EBEX growth and development.
+  </p>
+
+  <div class="roadmap-timeline">
+    <div class="roadmap-phase">
+      <div class="phase-header">
+        <span class="phase-number">Phase 1</span>
+        <span class="phase-time">Q1 2026</span>
+      </div>
+      <h3>Foundation & Launch</h3>
+      <ul>
+        <li>Token Creation</li>
+        <li>Website Launch</li>
+        <li>Community Setup (X)</li>
+      </ul>
+    </div>
+
+    <div class="roadmap-phase">
+      <div class="phase-header">
+        <span class="phase-number">Phase 2</span>
+        <span class="phase-time">Q2 2026</span>
+      </div>
+      <h3>Early Access & Liquidity</h3>
+      <ul>
+        <li>Community Early Access</li>
+        <li>Liquidity Pool Creation</li>
+      </ul>
+    </div>
+
+    <div class="roadmap-phase">
+      <div class="phase-header">
+        <span class="phase-number">Phase 3</span>
+        <span class="phase-time">Q3 2026</span>
+      </div>
+      <h3>Community Participation</h3>
+      <ul>
+        <li>Community Participation Program</li>
+      </ul>
+    </div>
+
+    <div class="roadmap-phase">
+      <div class="phase-header">
+        <span class="phase-number">Phase 4</span>
+        <span class="phase-time">Q4 2026</span>
+      </div>
+      <h3>Marketing & Expansion</h3>
+      <ul>
+        <li>Marketing Campaigns</li>
+        <li>Partnerships</li>
+      </ul>
+    </div>
+
+    <div class="roadmap-phase">
+      <div class="phase-header">
+        <span class="phase-number">Phase 5</span>
+        <span class="phase-time">2027 & Beyond</span>
+      </div>
+      <h3>Continuous Growth</h3>
+      <ul>
+        <li>Continuous updates</li>
+        <li>Community growth initiatives</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq container" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <p class="faq-desc">
+    Common questions and answers about $EBEX. If your question is not listed, reach out via official channels.
+  </p>
+
+  <div class="faq-accordion">
+    <!-- Question 1 -->
+    <div class="faq-item">
+      <button class="faq-question">What is $EBEX?</button>
+      <div class="faq-answer">
+        <p>$EBEX is a community token created on blockchain technology. It is intended to support fast and low-cost transactions while focusing on community participation and long-term development. It is experimental in nature and its value is determined by market activity. It is not a stablecoin.</p>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq-item">
+      <button class="faq-question">Who can participate in $EBEX?</button>
+      <div class="faq-answer">
+        <p>Participation in $EBEX is completely voluntary. Only those who genuinely want to join and participate do so out of their own free will and from the heart. No one is forced, obligated, or promised anything. Participation is at your own discretion and risk.</p>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq-item">
+      <button class="faq-question">How do I stay updated with news or announcements?</button>
+      <div class="faq-answer">
+        <p>The most reliable source for updates is the official social media links found at the bottom of the website. Click the social media logos and follow or subscribe to the official channels for announcements. Only trust updates from those verified accounts.</p>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="faq-item">
+      <button class="faq-question">How to buy $EBEX?</button>
+      <div class="faq-answer">
+        <p>$EBEX is not yet available for purchase. Trading or acquisition is not possible at this time. Details will be shared through official channels when and if it becomes available in the future. Always verify information from the official sources and never act on unofficial messages or links.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('active');
+    }
+  </script>
+ 
+  <script>
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      // Close other open items (accordion behavior)
+      document.querySelectorAll('.faq-item.active').forEach(openItem => {
+        if (openItem !== item) openItem.classList.remove('active');
+      });
+      item.classList.toggle('active');
+    });
+  });
+  </script>
+  
+<footer class="footer">
+  <div class="container">
+    <!-- Logo + Ebexus name side by side (like Tether) -->
+    <div class="footer-brand">
+      <img src="https://i.postimg.cc/nhcV1CBy/20260118_115202.png" alt="Ebexus Logo" class="footer-logo-img">
+      <span class="footer-site-name">Ebexus</span>
+    </div>
+
+    <!-- Grid of links -->
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Ebexus</h4>
+        <ul>
+          <li><a href="#about">About $EBEX</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Channels</h4>
+        <ul>
+          <li><a href="https://x.com/EbexusCoin" target="_blank">X (@EbexusCoin)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social icons (X and Telegram only) -->
+    <div class="footer-social">
+      <a href="https://x.com/EbexusCoin" target="_blank" class="social-icon">X</a>
+    </div>
+
+    <!-- Copyright and disclaimer -->
+    <div class="footer-bottom">
+      <p class="copyright">Copyright © 2026 Ebexus</p>
+      <p class="disclaimer">All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+  </html>
