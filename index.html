@@ -15,16 +15,15 @@
 <body>
 
     <header id="hero">
-    <!-- Particle background container -->
+    <!-- Particle container -->
     <div id="tsparticles"></div>
 
-    <!-- Your main content on top -->
+    <!-- Your existing content stays on top -->
     <img src="assets/ebexus-logo.png" alt="$EBEX Logo" class="logo">
     <h1>EBEXUS</h1>
     <p>Powering Community Growth – Together We Build</p>
     <div class="header-links">
         <a href="whitepaper.md" target="_blank" class="neon">Read Whitepaper</a>
-        <!-- Add other links if needed -->
     </div>
     </header>
     <div class="container">
@@ -153,49 +152,6 @@
     </a>
   </div>
     </footer>
-<script>
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: false },
-    background: { color: { value: "transparent" } },
-    particles: {
-      number: { value: 30, density: { enable: true, value_area: 800 } },
-      color: { value: "#00d4ff" }, // Change to "#00ff9d" if you want green accent
-      shape: {
-        type: "image",
-        image: {
-          src: "assets/ebexus-particle-logo.png",
-          width: 100,
-          height: 100,
-          replaceColor: false // Set to true if you want all particles tinted to the color above
-        }
-      },
-      opacity: { value: 0.7, random: true, animation: { enable: true, speed: 1 } },
-      size: { value: 20, random: true },
-      move: {
-        enable: true,
-        speed: 1.2,
-        direction: "none",
-        random: true,
-        straight: false,
-        out_mode: "out"
-      },
-      line_linked: {
-        enable: true,
-        distance: 120,
-        color: "#00d4ff",
-        opacity: 0.4,
-        width: 1
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "attract" },
-        onclick: { enable: true, mode: "push" },
-        resize: true
-      }
-    },
-    retina_detect: true
-  });
-</script>
+
 </body>
 </html>
