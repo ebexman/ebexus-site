@@ -194,11 +194,10 @@ footer {
 .social-icons img:hover {
   transform: scale(1.2);
 }
-/* Particle Background */
 #hero {
     position: relative;
     overflow: hidden;
-    min-height: 80vh;           /* Adjust to 100vh if you want full viewport height */
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,14 +212,14 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1;                 /* Behind the content */
+    z-index: 1;
 }
 
 .logo, h1, p, .header-links {
     position: relative;
-    z-index: 2;                 /* In front of particles */
+    z-index: 2;
 }
 
 #tsparticles canvas {
     display: block;
-}
+    }
