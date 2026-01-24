@@ -1,201 +1,174 @@
-/* style.css - Ebexus Modern Dark/Neon Theme */
+/* Ebexus Modern Dark/Neon Theme - Cleaned & Fixed */
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
     font-family: 'Inter', sans-serif;
-    line-height: 1.7;
-    background-color: #0a0a0a;
+    background: #0a0a0a;
     color: #e0e0e0;
+    line-height: 1.7;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
-}
+h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; color: #fff; }
 
-a {
-    color: #00ff9d;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #00d4ff;
-}
+a { color: #00ff9d; text-decoration: none; transition: 0.3s; }
+a:hover { color: #00d4ff; text-shadow: 0 0 10px #00d4ff; }
 
 header {
     text-align: center;
-    padding: 4rem 1rem;
-    background: linear-gradient(135deg, #111111, #1a1a2e);
+    padding: 5rem 1rem 3rem;
+    background: linear-gradient(135deg, #0f0f1f, #1a0033);
 }
+
+.logo { max-width: 180px; margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px #00ff9d); }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0.5rem 0;
-    text-shadow: 0 0 20px #00ff9d;
     color: #00ff9d;
+    text-shadow: 0 0 30px #00ff9d80;
 }
 
-header p {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-}
+header p { font-size: 1.6rem; margin: 1rem 0; }
 
-.logo {
-    max-width: 150px;
-    margin-bottom: 1rem;
-}
+.header-links { margin-top: 1.5rem; font-size: 1.3rem; }
+.header-links a { margin: 0 1rem; }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 
-.section {
-    margin-bottom: 4rem;
-}
-
-.neon {
-    color: #00ff9d;
-    text-shadow: 0 0 10px #00ff9d;
-}
+.section { margin: 5rem 0; }
 
 .card {
-    background: #1a1a1a;
+    background: #121212;
     border: 1px solid #333;
-    border-radius: 12px;
-    padding: 2rem;
-    margin: 1rem 0;
-    transition: all 0.3s ease;
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: 0.4s;
 }
 
 .card:hover {
     border-color: #00ff9d;
-    box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+    box-shadow: 0 0 30px rgba(0,255,157,0.25);
+    transform: translateY(-5px);
 }
 
-/* Tokenomics Pie Chart */
+.highlight { color: #00ff9d; font-size: 1.4rem; }
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: #00ff9d22;
+    border: 1px solid #00ff9d;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.button:hover { background: #00ff9d44; }
+
+/* Pie Chart */
 .pie-chart {
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     background: conic-gradient(
-        #00ff9d 0% 40%,      /* Community Engagement 40% */
-        #00d4ff 40% 60%,     /* Community Allocation 20% */
-        #ff00aa 60% 80%,     /* Liquidity 20% */
-        #ffd700 80% 90%,     /* Founder 10% */
-        #ff6347 90% 95%,     /* Marketing 5% */
-        #6a5acd 95% 100%     /* Development 5% */
+        #00ff9d 0% 40%,
+        #00d4ff 40% 60%,
+        #ff00aa 60% 80%,
+        #ffd700 80% 90%,
+        #ff6347 90% 95%,
+        #6a5acd 95% 100%
     );
     margin: 2rem auto;
-    box-shadow: 0 0 20px rgba(0, 255, 157, 0.2);
+    box-shadow: 0 0 40px rgba(0,255,157,0.3);
 }
 
+/* Allocation */
 .allocation {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
-    justify-content: center;
+    margin-top: 1.5rem;
 }
 
-.allocation div {
-    flex: 1 1 150px;
+.alloc-item {
     padding: 1rem;
-    background: #222;
+    background: var(--color, #333)22;
+    border-left: 5px solid var(--color);
     border-radius: 8px;
     text-align: center;
     font-weight: 600;
 }
 
-/* Roadmap Timeline */
+/* Roadmap */
 .roadmap {
     position: relative;
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
 
 .roadmap::before {
     content: '';
     position: absolute;
-    left: 1.4rem;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #333, #00ff9d, #333);
+    top: 0; bottom: 0; left: 20px;
+    width: 3px;
+    background: linear-gradient(#333, #00ff9d, #333);
 }
 
 .roadmap-phase {
-    margin-bottom: 2.5rem;
     position: relative;
-    padding-left: 3rem;
+    margin: 3rem 0;
+    padding-left: 4rem;
 }
 
 .roadmap-phase::before {
     content: '';
     position: absolute;
-    left: 1rem;
-    top: 0.5rem;
-    width: 1rem;
-    height: 1rem;
+    left: 12px;
+    top: 12px;
+    width: 18px;
+    height: 18px;
     background: #00ff9d;
     border-radius: 50%;
-    box-shadow: 0 0 15px #00ff9d;
+    box-shadow: 0 0 20px #00ff9d80;
     z-index: 1;
 }
 
-.roadmap-phase h3 {
-    color: #00ff9d;
-}
+.roadmap-phase h3 { color: #00ff9d; }
 
-/* FAQ Accordion */
+/* FAQ */
 .faq-item details {
     margin-bottom: 1rem;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .faq-item summary {
+    padding: 1.2rem 1.5rem;
     cursor: pointer;
     font-weight: 600;
     color: #00ff9d;
-    padding: 1rem;
-    background: #1a1a1a;
-    border-radius: 8px;
-    transition: background 0.3s;
-}
-
-.faq-item details[open] summary {
     background: #222;
-    color: #00d4ff;
 }
 
-.faq-item p {
-    padding: 1rem;
-    background: #111;
-    border-radius: 0 0 8px 8px;
-}
+.faq-item details[open] summary { background: #00ff9d22; }
 
-/* Mobile Responsiveness */
+.faq-item p { padding: 0 1.5rem 1.5rem; }
+
+/* Mobile */
 @media (max-width: 768px) {
-    header h1 { font-size: 2.8rem; }
-    header p { font-size: 1.2rem; }
-    .container { padding: 1rem; }
-    .pie-chart { width: 180px; height: 180px; }
-    .roadmap::before { left: 0.9rem; }
-    .roadmap-phase { padding-left: 2.2rem; }
-    .roadmap-phase::before { left: 0.4rem; }
-    body { font-size: 1.05rem; }
+    header h1 { font-size: 3.5rem; }
+    .pie-chart { width: 200px; height: 200px; }
+    .roadmap::before { left: 15px; }
+    .roadmap-phase { padding-left: 3rem; }
+    .roadmap-phase::before { left: 7px; }
 }
 
 footer {
     text-align: center;
-    padding: 2rem 1rem;
-    background: #111;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
+    padding: 3rem 1rem;
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+    font-size: 0.95rem;
 }
