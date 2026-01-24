@@ -1,765 +1,201 @@
-/* Reset */
-* { margin:0; padding:0; box-sizing:border-box; }
+/* style.css - Ebexus Modern Dark/Neon Theme */
 
-html {
-  scroll-behavior: smooth; /* Makes #links scroll smoothly */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: #000000;
-  color: #ffffff;
-  font-family: 'Exo 2', sans-serif;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 5%;
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
 }
 
-/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(0,0,0,0.9);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #222;
+a {
+    color: #00ff9d;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
+a:hover {
+    color: #00d4ff;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #111111, #1a1a2e);
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    text-shadow: 0 0 20px #00ff9d;
+    color: #00ff9d;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    max-width: 150px;
+    margin-bottom: 1rem;
 }
 
-.logo-img {
-  height: 45px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
-.site-name {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ffffff;
+.section {
+    margin-bottom: 4rem;
 }
 
-.desktop-nav {
-  display: flex;
-  gap: 28px;
+.neon {
+    color: #00ff9d;
+    text-shadow: 0 0 10px #00ff9d;
 }
 
-.desktop-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
+.card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
 }
 
-.desktop-nav a:hover {
-  color: #00E5FF;
+.card:hover {
+    border-color: #00ff9d;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
+/* Tokenomics Pie Chart */
+.pie-chart {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #00ff9d 0% 40%,      /* Community Engagement 40% */
+        #00d4ff 40% 60%,     /* Community Allocation 20% */
+        #ff00aa 60% 80%,     /* Liquidity 20% */
+        #ffd700 80% 90%,     /* Founder 10% */
+        #ff6347 90% 95%,     /* Marketing 5% */
+        #6a5acd 95% 100%     /* Development 5% */
+    );
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.2);
 }
 
-.hamburger span {
-  width: 30px;
-  height: 3px;
-  background: #ffffff;
-  border-radius: 2px;
+.allocation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background: rgba(0,0,0,0.98);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 30px 0;
-  text-align: center;
-  border-top: 1px solid #222;
+.allocation div {
+    flex: 1 1 150px;
+    padding: 1rem;
+    background: #222;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
 }
 
-.mobile-menu.active {
-  display: flex;
-}
-
-.mobile-menu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  padding: 18px 0;
-  display: block;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  .desktop-nav { display: none; }
-  .hamburger { display: flex; }
-  .site-name { font-size: 1.7rem; }
-  .logo-img { height: 40px; }
-}
-
-/* Sections (basic padding and spacing) */
-section {
-  scroll-margin-top: 80px; /* Prevents header from covering the section title */
-  padding: 100px 5%;
-  text-align: center;
-}
-
-h1, h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #dddddd;
-  max-width: 800px;
-  margin: 0 auto;
-}
-/* Hero Section */
-.hero {
-  min-height: 80vh; /* Hindi na full 100vh para hindi masyadong mahaba sa mobile */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #000000;
-  padding: 60px 5% 40px; /* Mas maliit na padding sa mobile */
-}
-
-/* Animated Tagline – glow pulse + fade-in (mas maganda at hindi lumalampas) */
-.animated-tagline {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 24px;
-  font-size: clamp(2.2rem, 7vw, 4rem); /* Maliit sa mobile, max 4rem sa PC */
-  animation: fadeInGlow 3s ease-out forwards;
-  text-shadow: 0 0 20px rgba(255,255,255,0.4);
-}
-
-@keyframes fadeInGlow {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-    text-shadow: 0 0 0 rgba(255,255,255,0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    text-shadow: 0 0 30px rgba(255,255,255,0.6);
-  }
-}
-
-/* Optional: Kung gusto mo pa ring typing effect pero mas maliit at mabilis */
-.animated-tagline.typing {
-  overflow: hidden;
-  border-right: 0.15em solid #00E5FF;
-  white-space: nowrap;
-  animation: typing 2.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
-  font-size: clamp(2rem, 6vw, 3.5rem); /* Mas maliit pa */
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #00E5FF; }
-}
-
-/* Subtitle – mas maliit at responsive */
-.subtitle {
-  font-size: clamp(1.1rem, 4vw, 1.6rem);
-  color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  line-height: 1.5;
-}
-
-/* CTA Button – mas maliit sa mobile */
-.cta-white {
-  display: inline-block;
-  background: #ffffff;
-  color: #000000;
-  font-weight: 600;
-  font-size: clamp(0.95rem, 3vw, 1.1rem);
-  padding: clamp(10px, 2vw, 14px) clamp(20px, 4vw, 32px);
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  transition: all 0.3s ease;
-}
-
-.cta-white:hover {
-  background: #f0f0f0;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-}
-
-/* Extra mobile safety */
-@media (max-width: 768px) {
-  .hero {
-    min-height: 70vh;
-    padding: 80px 5% 40px;
-  }
-  .animated-tagline {
-    font-size: clamp(1.8rem, 9vw, 3rem);
-    line-height: 1.2;
-  }
-  .subtitle {
-    font-size: clamp(1rem, 4.5vw, 1.3rem);
-  }
-}
-/* About $EBEX Section */
-.about {
-  padding: 100px 5%;
-  text-align: center;
-  background: #000000;
-}
-
-.about h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
-  color: #ffffff;
-  margin-bottom: 40px;
-  text-shadow: 0 0 20px rgba(255,255,255,0.3);
-}
-
-.about-desc {
-  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-  color: #dddddd;
-  max-width: 900px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-.about-points {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.point-card {
-  background: rgba(255,255,255,0.03);
-  padding: 40px 30px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: all 0.4s ease;
-  backdrop-filter: blur(8px);
-}
-
-.point-card:hover {
-  transform: translateY(-12px);
-  border-color: rgba(255,255,255,0.25);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-}
-
-.point-card h3 {
-  font-size: 1.6rem;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-
-.point-card p {
-  font-size: 1.1rem;
-  color: #cccccc;
-  line-height: 1.6;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .about {
-    padding: 80px 5%;
-  }
-  .point-card {
-    padding: 30px 20px;
-  }
-}
-/* Tokenomics Section */
-.tokenomics {
-  padding: 100px 5%;
-  text-align: center;
-  background: #000000;
-}
-
-.tokenomics h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.tokenomics-desc {
-  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-  color: #dddddd;
-  max-width: 900px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-/* Key Stats Cards */
-.token-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  margin-bottom: 80px;
-}
-
-.stat-card {
-  background: rgba(255,255,255,0.03);
-  padding: 40px 20px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: all 0.4s ease;
-}
-
-.stat-card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(255,255,255,0.25);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-}
-
-.stat-value {
-  font-size: clamp(1.8rem, 5vw, 2.8rem);
-  font-weight: 900;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.stat-label {
-  font-size: 1.1rem;
-  color: #bbbbbb;
-}
-
-/* Allocation Breakdown with visual bars */
-.allocation-breakdown {
-  max-width: 900px;
-  margin: 0 auto 60px;
-}
-
-.allocation-breakdown h3 {
-  font-size: 2.2rem;
-  color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.allocation-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.allocation-item {
-  text-align: left;
-}
-
-.allocation-label {
-  font-size: 1.2rem;
-  color: #dddddd;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.allocation-bar {
-  height: 24px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-}
-
-.allocation-bar span {
-  position: absolute;
-  top: 0;
-  left: 12px;
-  color: #000;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 24px;
-}
-
-/* Different colors for each bar (optional, para madaling makita) */
-.allocation-bar[style*="40%"] { background: linear-gradient(to right, #ffffff, #000000); }
-.allocation-bar[style*="20%"] { background: linear-gradient(to right, #ffffff, #000000); }
-.allocation-bar[style*="20%"] { background: linear-gradient(to right, #ffffff, #000000); }
-.allocation-bar[style*="10%"] { background: linear-gradient(to right, #ffffff, #000000); }
-.allocation-bar[style*="5%"] { background: linear-gradient(to right, #ffffff, #000000); }
-.allocation-bar[style*="5%"] { background: linear-gradient(to right, #ffffff, #000000); }
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .tokenomics {
-    padding: 80px 5%;
-  }
-  .allocation-bar {
-    height: 20px;
-  }
-  .allocation-bar span {
-    font-size: 0.9rem;
-    left: 8px;
-  }
-}
-/* Roadmap Section */
+/* Roadmap Timeline */
 .roadmap {
-  padding: 100px 5%;
-  text-align: center;
-  background: #000000;
+    position: relative;
+    margin: 2rem 0;
 }
 
-.roadmap h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
-  color: #ffffff;
-  margin-bottom: 40px;
-  text-shadow: 0 0 20px rgba(255,255,255,0.3);
-}
-
-.roadmap-desc {
-  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-  color: #dddddd;
-  max-width: 900px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-.roadmap-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
+.roadmap::before {
+    content: '';
+    position: absolute;
+    left: 1.4rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #333, #00ff9d, #333);
 }
 
 .roadmap-phase {
-  background: rgba(255,255,255,0.03);
-  padding: 40px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-  text-align: left;
-  transition: all 0.4s ease;
-  backdrop-filter: blur(8px);
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-left: 3rem;
 }
 
-.roadmap-phase:hover {
-  transform: translateY(-10px);
-  border-color: rgba(255,255,255,0.25);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-}
-
-.phase-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.phase-number {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #ffffff;
-  background: rgba(255,255,255,0.1);
-  padding: 8px 16px;
-  border-radius: 50px;
-}
-
-.phase-time {
-  font-size: 1.1rem;
-  color: #bbbbbb;
-  font-weight: 500;
+.roadmap-phase::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #00ff9d;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00ff9d;
+    z-index: 1;
 }
 
 .roadmap-phase h3 {
-  font-size: 1.7rem;
-  color: #ffffff;
-  margin-bottom: 16px;
+    color: #00ff9d;
 }
 
-.roadmap-phase ul {
-  list-style: none;
-  font-size: 1.15rem;
-  color: #dddddd;
+/* FAQ Accordion */
+.faq-item details {
+    margin-bottom: 1rem;
 }
 
-.roadmap-phase li {
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 24px;
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #00ff9d;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
-.roadmap-phase li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: #ffffff;
-  font-weight: bold;
+.faq-item details[open] summary {
+    background: #222;
+    color: #00d4ff;
 }
 
-/* Mobile adjustments */
+.faq-item p {
+    padding: 1rem;
+    background: #111;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .roadmap {
-    padding: 80px 5%;
-  }
-  .roadmap-phase {
-    padding: 30px 20px;
-  }
-  .phase-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-/* FAQ Section */
-.faq {
-  padding: 100px 5%;
-  text-align: center;
-  background: #000000;
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; }
+    .container { padding: 1rem; }
+    .pie-chart { width: 180px; height: 180px; }
+    .roadmap::before { left: 0.9rem; }
+    .roadmap-phase { padding-left: 2.2rem; }
+    .roadmap-phase::before { left: 0.4rem; }
+    body { font-size: 1.05rem; }
 }
 
-.faq h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 3.8rem);
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.faq-desc {
-  font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-  color: #dddddd;
-  max-width: 900px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-}
-
-/* Accordion */
-.faq-accordion {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  margin-bottom: 16px;
-  background: rgba(255,255,255,0.03);
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-  border-color: rgba(255,255,255,0.2);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-}
-
-.faq-question {
-  width: 100%;
-  padding: 20px 24px;
-  background: transparent;
-  border: none;
-  text-align: left;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-question:hover {
-  background: rgba(255,255,255,0.05);
-}
-
-.faq-question::after {
-  content: '+';
-  font-size: 1.8rem;
-  color: #00E5FF;
-  transition: transform 0.3s ease;
-}
-
-.faq-item.active .faq-question::after {
-  transform: rotate(45deg);
-}
-
-.faq-answer {
-  display: none;
-  padding: 0 24px 24px;
-  font-size: 1.1rem;
-  color: #dddddd;
-  line-height: 1.6;
-}
-
-.faq-item.active .faq-answer {
-  display: block;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .faq {
-    padding: 80px 5%;
-  }
-  .faq-question {
-    font-size: 1.2rem;
-    padding: 16px 20px;
-  }
-  .faq-answer {
-    font-size: 1rem;
-    padding: 0 20px 20px;
-  }
-}
-/* Footer - Tether.to style with Ebexus logo + name side by side */
-.footer {
-  background: #000000;
-  padding: 80px 5% 40px;
-  border-top: 1px solid #222;
-  color: #ffffff;
-  font-size: 0.95rem;
-}
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 60px;
-}
-
-.footer-logo-img {
-  height: 60px;
-  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
-}
-
-.footer-site-name {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 900;
-  color: #ffffff;
-  letter-spacing: 2px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 50px;
-  margin-bottom: 60px;
-}
-
-.footer-column h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.footer-column ul {
-  list-style: none;
-}
-
-.footer-column li {
-  margin-bottom: 12px;
-}
-
-.footer-column a {
-  color: #cccccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-column a:hover {
-  color: #ffffff;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  margin-bottom: 40px;
-}
-
-.social-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 1.4rem;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.social-icon:hover {
-  background: rgba(255,255,255,0.2);
-  transform: scale(1.15);
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 40px;
-  border-top: 1px solid #222;
-}
-
-.copyright {
-  font-size: 0.9rem;
-  color: #888888;
-  margin-bottom: 8px;
-}
-
-.disclaimer {
-  font-size: 0.85rem;
-  color: #666666;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .footer {
-    padding: 60px 5% 30px;
-  }
-  .footer-brand {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .footer-logo-img {
-    height: 50px;
-  }
-  .footer-site-name {
-    font-size: 2.2rem;
-  }
-  .footer-grid {
-    gap: 40px;
-  }
-  .footer-social {
-    gap: 24px;
-  }
-  .social-icon {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
-  }
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #111;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
 }
