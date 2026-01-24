@@ -198,7 +198,13 @@ footer {
 #hero {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #111111, #1a1a2e); /* existing mo */
+    min-height: 80vh;           /* Adjust to 100vh if you want full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #111111, #1a1a2e);
 }
 
 #tsparticles {
@@ -207,10 +213,14 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1; /* sa likod ng content */
+    z-index: 1;                 /* Behind the content */
 }
 
 .logo, h1, p, .header-links {
     position: relative;
-    z-index: 2; /* sa harap */
+    z-index: 2;                 /* In front of particles */
+}
+
+#tsparticles canvas {
+    display: block;
 }
