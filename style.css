@@ -194,3 +194,23 @@ footer {
 .social-icons img:hover {
   transform: scale(1.2);
 }
+/* Particle Background */
+#hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #111111, #1a1a2e); /* existing mo */
+}
+
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* sa likod ng content */
+}
+
+.logo, h1, p, .header-links {
+    position: relative;
+    z-index: 2; /* sa harap */
+}
