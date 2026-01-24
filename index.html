@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3/tsparticles.all.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,20 @@
     <link rel="icon" href="assets/ebexus-favicon64.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/ebexus-favicon64.png">
     <!-- Favicon added - test commit -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3/tsparticles.all.min.js"></script>
 </head>
 <body>
 
-    <header>
-        <img src="assets/ebexus-logo.png" alt="$EBEX Logo - Community Growth Token" class="logo">
-        <h1>EBEXUS</h1>
-        <p>Powering Community Growth – Together We Build</p>
-        <div class="header-links">
-    <a href="whitepaper.md" target="_blank" class="neon">Read Whitepaper</a>
-        </div>
-  </a>
-            </div>
-        </div>
+    <header id="hero">
+    <!-- Particles background (gumagalaw 'to) -->
+    <div id="tsparticles"></div>
+
+    <img src="assets/ebexus-logo.png" alt="$EBEX Logo - Community Growth Token" class="logo">
+    <h1>EBEXUS</h1>
+    <p>Powering Community Growth – Together We Build</p>
+    <div class="header-links">
+        <a href="whitepaper.md" target="_blank" class="neon">Read Whitepaper</a>
+    </div>
     </header>
 
     <div class="container">
@@ -150,6 +152,52 @@
     </a>
   </div>
     </footer>
-
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false }, // container lang (header)
+    background: {
+      color: { value: "transparent" } // transparent para makita 'yung gradient mo
+    },
+    particles: {
+      number: { value: 35, density: { enable: true, value_area: 800 } }, // hindi masyadong marami para hindi lag
+      color: { value: "#00ff9d" }, // neon green match sa theme mo
+      shape: {
+        type: "image",
+        image: {
+          src: "assets/ebexus-logo.png", // existing logo mo
+          width: 100,
+          height: 100,
+          replaceColor: false // original colors ng logo
+        }
+      },
+      opacity: { value: 0.6, random: true, animation: { enable: true, speed: 1 } },
+      size: { value: 20, random: true },
+      move: {
+        enable: true,
+        speed: 1.5,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out"
+      },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: "#00d4ff", // neon blue lines
+        opacity: 0.4,
+        width: 1
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "attract" }, // lumalapit sa mouse
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      }
+    },
+    retina_detect: true
+  });
+</script>
 </body>
 </html>
