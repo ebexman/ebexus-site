@@ -1,7 +1,7 @@
 # $EBEX - Powering Community Growth
 
 <div align="center">
-  <img src="assets/ebexuslogo.png" alt="$EBEX Logo" width="200">
+  <img src="assets/ebexus-logo.png" alt="$EBEX Logo" width="200">
   <br><br>
   <strong>Community-Driven Token | Experimental Blockchain Initiative</strong>
   <br><br>
