@@ -25,7 +25,7 @@ $EBEX is a community-driven token created as an experimental initiative on the b
 ## Links
 - **Live Site**: https://ebexus.space
 - **Whitepaper**: [Ebex Whitepaper.pdf](Ebex%20Whitepaper.pdf) (download from repo)
-- **X (Twitter)**: https://x.com/EBcoinToken_
+- **X (Twitter)**: https://x.com/EbexusCoin
 - **GitHub Repo**: https://github.com/ebexman/ebexus-site
 
 ## How to Contribute
