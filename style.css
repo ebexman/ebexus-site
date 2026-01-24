@@ -181,3 +181,16 @@ footer {
 .header-links img:hover {
   transform: scale(1.2);
 }
+.social-icons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
