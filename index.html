@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3/tsparticles.all.min.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,18 @@
 <body>
 
     <header id="hero">
-    <!-- Particles background (gumagalaw 'to) -->
+    <!-- Particle background container -->
     <div id="tsparticles"></div>
 
-    <img src="assets/ebexus-logo.png" alt="$EBEX Logo - Community Growth Token" class="logo">
+    <!-- Your main content on top -->
+    <img src="assets/ebexus-logo.png" alt="$EBEX Logo" class="logo">
     <h1>EBEXUS</h1>
     <p>Powering Community Growth – Together We Build</p>
     <div class="header-links">
         <a href="whitepaper.md" target="_blank" class="neon">Read Whitepaper</a>
+        <!-- Add other links if needed -->
     </div>
     </header>
-
     <div class="container">
 
         <section class="section card" id="about">
@@ -154,27 +155,25 @@
     </footer>
 <script>
   tsParticles.load("tsparticles", {
-    fullScreen: { enable: false }, // container lang (header)
-    background: {
-      color: { value: "transparent" } // transparent para makita 'yung gradient mo
-    },
+    fullScreen: { enable: false },
+    background: { color: { value: "transparent" } },
     particles: {
-      number: { value: 35, density: { enable: true, value_area: 800 } }, // hindi masyadong marami para hindi lag
-      color: { value: "#00ff9d" }, // neon green match sa theme mo
+      number: { value: 30, density: { enable: true, value_area: 800 } },
+      color: { value: "#00d4ff" }, // Change to "#00ff9d" if you want green accent
       shape: {
         type: "image",
         image: {
-          src: "assets/ebexus-logo.png", // existing logo mo
+          src: "assets/ebexus-particle-logo.png",
           width: 100,
           height: 100,
-          replaceColor: false // original colors ng logo
+          replaceColor: false // Set to true if you want all particles tinted to the color above
         }
       },
-      opacity: { value: 0.6, random: true, animation: { enable: true, speed: 1 } },
+      opacity: { value: 0.7, random: true, animation: { enable: true, speed: 1 } },
       size: { value: 20, random: true },
       move: {
         enable: true,
-        speed: 1.5,
+        speed: 1.2,
         direction: "none",
         random: true,
         straight: false,
@@ -183,15 +182,14 @@
       line_linked: {
         enable: true,
         distance: 120,
-        color: "#00d4ff", // neon blue lines
+        color: "#00d4ff",
         opacity: 0.4,
         width: 1
       }
     },
     interactivity: {
-      detect_on: "canvas",
       events: {
-        onhover: { enable: true, mode: "attract" }, // lumalapit sa mouse
+        onhover: { enable: true, mode: "attract" },
         onclick: { enable: true, mode: "push" },
         resize: true
       }
