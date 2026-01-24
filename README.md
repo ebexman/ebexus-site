@@ -7,8 +7,8 @@
   <br><br>
   <a href="https://ebexus.space">Live Website</a> • 
   <div align="center">
-  <a href="https://x.com/EBcoinToken_">
-    <img src="assets/x-icon.png" alt="Follow on X" width="32">
+  <a href="https://x.com/EbexusCoin">
+    <img src="assets/x-icon64.png" alt="Follow on X" width="32">
   </a>
 </div>
 </div>
