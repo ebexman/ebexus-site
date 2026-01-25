@@ -24,7 +24,7 @@ $EBEX features a **fixed total supply** of **25,000,000 tokens** with **no trans
 | Allocation                        | Percentage | Description                                                                 |
 |-----------------------------------|------------|-----------------------------------------------------------------------------|
 | EBEXers Staking Program             | 40%        | Reserved for participation initiatives, including seasonal programs.       |
-| Community Allocation / Early Access | 20%      | Allocated for early community access and active involvement.                |
+| Community Allocation / Early Access | 20%      | Allocated for presale / early sale and active involvement.                |
 | Liquidity Allocation              | 20%        | Dedicated to providing trading liquidity on decentralized exchanges.       |
 | Founder Allocation                | 10%        | Allocated to the project team for development and operations.              |
 | Marketing Allocation              | 5%         | Supports awareness campaigns and community outreach.                        |
@@ -62,7 +62,7 @@ The roadmap outlines phased milestones with a focus on transparency, measurable 
 | Phase     | Timeline     | Key Milestones                                      |
 |-----------|--------------|-----------------------------------------------------|
 | Phase 1   | Q1 2026     | Token creation, website launch, community setup (X) |
-| Phase 2   | Q2 2026     | Community early access, liquidity pool establishment |
+| Phase 2   | Q2 2026     | Presale / Early Sale, liquidity pool establishment |
 | Phase 3   | Q3 2026     | Launch of EBEXers Staking Participation Program           |
 | Phase 4   | Q4 2026     | Marketing campaigns, strategic partnerships         |
 | Phase 5   | 2027+       | Continuous updates and community-driven growth      |
