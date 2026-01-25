@@ -10,7 +10,6 @@
     <link rel="icon" href="assets/ebexus-favicon64.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/ebexus-favicon64.png">
     <!-- Favicon added - test commit -->
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/all@3/tsparticles.all.min.js"></script>
 </head>
 <body>
 
@@ -152,49 +151,5 @@
     </a>
   </div>
     </footer>
-<script>
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: false },
-    background: { color: { value: "transparent" } },
-    particles: {
-      number: { value: 30, density: { enable: true, value_area: 800 } },
-      color: { value: "#00d4ff" }, // neon blue, or change to "#00ff9d" for green
-      shape: {
-        type: "image",
-        image: {
-          src: "assets/ebexus-particle-logo.png", // your new PNG
-          width: 100,
-          height: 100,
-          replaceColor: false // false to keep original colors
-        }
-      },
-      opacity: { value: 0.7, random: true, animation: { enable: true, speed: 1 } },
-      size: { value: 20, random: true },
-      move: {
-        enable: true,
-        speed: 1.2,
-        direction: "none",
-        random: true,
-        straight: false,
-        out_mode: "out"
-      },
-      line_linked: {
-        enable: true,
-        distance: 120,
-        color: "#00d4ff",
-        opacity: 0.4,
-        width: 1
-      }
-    },
-    interactivity: {
-      events: {
-        onhover: { enable: true, mode: "attract" }, // attract to mouse
-        onclick: { enable: true, mode: "push" },
-        resize: true
-      }
-    },
-    retina_detect: true
-  });
-</script>
 </body>
 </html>
