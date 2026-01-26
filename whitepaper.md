@@ -10,7 +10,7 @@ $EBEX is a community-driven token built on the **Polygon blockchain**. It is des
 ## II. Vision and Mission
 
 **Vision**  
-To establish a collaborative, blockchain-powered ecosystem that enables sustainable community growth and innovation.
+To establish a united, blockchain-powered ecosystem that enables sustainable community growth and innovation.
 
 **Mission**  
 To cultivate a robust, engaged community centered on $EBEX by exploring decentralized solutions, promoting transparent participation, and supporting ongoing ecosystem development.
@@ -34,7 +34,7 @@ All allocations are transparent and designed to support ecosystem growth. This i
 
 ## IV. Community Staking Participation Program
 
-The Community Staking Participation Program enables eligible holders to engage actively with the ecosystem through optional, time-bound staking seasons. The program encourages collaboration and sustained involvement rather than speculative returns.
+The Community Staking Participation Program enables eligible holders to engage actively with the ecosystem through optional, time-bound staking seasons. The program encourages active participation and long-term commitment rather than speculative returns.
 
 **Eligibility and Mechanics**  
 - Minimum holding requirement: **1,000 $EBEX**.  
