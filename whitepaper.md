@@ -29,7 +29,7 @@ $EBEX features a **fixed total supply** of **25,000,000 tokens** with **no trans
 | Founder Allocation                | 10%        | Allocated to the project team for development and operations.              |
 | Marketing & Development Allocation              | 5%         |Combined allocation to support promotional activities, community engagement, influencer partnerships, platform development, technical upgrades, and ecosystem collaborations.
  .                        |
-| Development Allocation            | 5%         | Funds ongoing updates, improvements, and ecosystem enhancements.           |
+| Reserved Allocation            | 5%         | Allocated for future community-driven initiatives, ecosystem expansion, strategic opportunities, grants, or additional holder rewards           |
 
 All allocations are transparent and designed to support ecosystem growth. This is an experimental community token; early access is available via the dedicated allocation. This document is for informational purposes only and does not constitute financial advice.
 
