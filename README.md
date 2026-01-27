@@ -5,7 +5,7 @@
   <br><br>
   <strong>Community-Driven Token | Experimental Blockchain Initiative</strong>
   <br><br>
-  <a href="https://ebexus.space">Live Website</a> • 
+  <a href="https://ebexus.space">www.ebexus.space</a> • 
   <div align="center">
   <a href="https://x.com/EbexusCoin">
     <img src="assets/x-icon64.png" alt="Follow on X" width="32">
